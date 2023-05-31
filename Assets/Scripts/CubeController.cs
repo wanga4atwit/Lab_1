@@ -9,7 +9,6 @@ public class CubeController : MonoBehaviour
     void Start()
     {
         scoreManager = GameObject.Find("GameController").GetComponent<GameController>();
-
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -17,15 +16,15 @@ public class CubeController : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // Add to score when the player hits a cube
-            GameController.score++;
+            GameController.playerscore++;
             // Destroy the cube
             Destroy(gameObject);
         }
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "npc")
+        {
+            GameController.npcscore++;
+            Destroy(gameObject);
+        }
     }
 }

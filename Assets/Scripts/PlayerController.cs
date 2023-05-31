@@ -5,12 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb;
-    public float speed;
+    public float speed = 10.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 10.0f;
         rb = GetComponent<Rigidbody>();
     }
 
