@@ -12,6 +12,7 @@ public class NPCController : MonoBehaviour
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    /* when the NPC collides with the player, the player losses points
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -19,6 +20,7 @@ public class NPCController : MonoBehaviour
             GameController.playerscore--;
         }
     }
+    */
 
     // Define AI behavior for the characters
     void Update()

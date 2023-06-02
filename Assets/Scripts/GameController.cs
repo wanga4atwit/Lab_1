@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController: MonoBehaviour
 {
     public static int playerscore = 0;
-    public static int npcscore = 0;
+    public static int npcscore = 10;
     void OnGUI()
     {
         GUIStyle scoreStyle = new GUIStyle();

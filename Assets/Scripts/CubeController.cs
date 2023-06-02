@@ -23,7 +23,7 @@ public class CubeController : MonoBehaviour
 
         if (collision.gameObject.tag == "npc")
         {
-            GameController.npcscore++;
+            GameController.npcscore--;
             Destroy(gameObject);
         }
     }
